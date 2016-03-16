@@ -22,9 +22,11 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'VoteController@index');
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
-    Route::get('/', 'HomeController@index');
+    Route::get('/', 'VoteController@index');
+    Route::post('/vote', 'VoteController@vote');
+    Route::post('/unvote', 'VoteController@unvote');
 });

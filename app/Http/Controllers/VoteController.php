@@ -6,7 +6,7 @@ use App\Feature;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class VoteController extends Controller
 {
 	/**
 	 * Create a new controller instance.
@@ -28,5 +28,17 @@ class HomeController extends Controller
 		return view('index', [
 			'features' => Feature::all()
 		]);
+	}
+
+	public function vote(Request $request)
+	{
+		Feature::find($request->input('feature_id'))->vote();
+		return back();
+	}
+
+	public function unvote(Request $request)
+	{
+		Feature::find($request->input('feature_id'))->unvote();
+		return back();
 	}
 }
