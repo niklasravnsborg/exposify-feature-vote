@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Feature extends Model
 {
+	public function is_voted()
+	{
+		return Vote::where('user', Auth::id())->where('voted_on', $this->id)->exists();
+	}
+
 	public function vote()
 	{
 		Vote::firstOrCreate([
