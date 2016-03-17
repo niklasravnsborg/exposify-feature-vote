@@ -32,13 +32,13 @@ class VoteController extends Controller
 
 	public function vote(Request $request)
 	{
-		Feature::find($request->input('feature_id'))->vote();
+		Feature::find($request['feature_id'])->vote();
 		return back();
 	}
 
 	public function unvote(Request $request)
 	{
-		Feature::find($request->input('feature_id'))->unvote();
+		Feature::find($request['feature_id'])->unvote();
 		return back();
 	}
 }
