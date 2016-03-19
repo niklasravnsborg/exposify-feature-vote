@@ -4,7 +4,7 @@
 @section('content')
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="small-12 column">
 				<div class="panel panel-default">
 					<div class="panel-heading">Passwort zurücksetzen</div>
 					<div class="panel-body">
@@ -14,13 +14,15 @@
 							</div>
 						@endif
 
-						<form class="form-horizontal" role="form" method="POST" action="{{ url('/password/email') }}">
+						<form class="form" role="form" method="POST" action="{{ url('/password/email') }}">
 							{!! csrf_field() !!}
 
-							<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-								<label class="col-md-4 control-label">E-Mail Adresse</label>
+							<div class="row{{ $errors->has('email') ? ' has-error' : '' }}">
+								<div class="medium-4 column">
+									<label>E-Mail Adresse</label>
+								</div>
 
-								<div class="col-md-6">
+								<div class="medium-6 end column">
 									<input type="email" class="form-control" name="email" value="{{ old('email') }}">
 
 									@if ($errors->has('email'))
@@ -31,9 +33,9 @@
 								</div>
 							</div>
 
-							<div class="form-group">
-								<div class="col-md-6 col-md-offset-4">
-									<button type="submit" class="btn btn-primary">
+							<div class="row">
+								<div class="medium-6 medium-push-4 column">
+									<button type="submit" class="btn btn-secondary btn-secondary-fill">
 										<i class="fa fa-btn fa-envelope"></i>Link zum Passwort-Zurücksetzen senden
 									</button>
 								</div>
