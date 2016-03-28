@@ -9,22 +9,31 @@
 				<ul class="list-group">
 					@foreach($features as $feature)
 						<li class="list-group-item">
-							<strong>{{ $feature['title'] }}</strong>
-							{{ $feature['description'] }}
 							@if (Auth::check())
-								@if (!$feature->is_voted())
-									<form action="/vote" method="POST">
-										<input name="_token" type="hidden" value="{{ csrf_token() }}">
-										<input name="feature_id" type="hidden" value="{{ $feature['id'] }}">
-										<button class="btn btn-secondary btn-secondary-fill" type="submit">Voten</button>
-									</form>
-								@else
-									<form action="/unvote" method="POST">
-										<input name="_token" type="hidden" value="{{ csrf_token() }}">
-										<input name="feature_id" type="hidden" value="{{ $feature['id'] }}">
-										<button class="btn" type="submit">Entvoten</button>
-									</form>
-								@endif
+								<div class="row">
+									<div class="small-2 end column">
+										@if (!$feature->is_voted())
+											<form action="/vote" method="POST">
+												<input name="_token" type="hidden" value="{{ csrf_token() }}">
+												<input name="feature_id" type="hidden" value="{{ $feature['id'] }}">
+												<button class="btn btn-secondary btn-fill vote-btn" type="submit">Voten</button>
+											</form>
+										@else
+											<form action="/unvote" method="POST">
+												<input name="_token" type="hidden" value="{{ csrf_token() }}">
+												<input name="feature_id" type="hidden" value="{{ $feature['id'] }}">
+												<button class="btn vote-btn" type="submit">Entvoten</button>
+											</form>
+										@endif
+									</div>
+									<div class="small-10 column">
+										<strong>{{ $feature['title'] }}</strong>
+										{{ $feature['description'] }}
+									</div>
+								</div>
+							@else
+								<strong>{{ $feature['title'] }}</strong>
+								{{ $feature['description'] }}
 							@endif
 						</li>
 					@endforeach

@@ -35,7 +35,7 @@
 
 							<div class="row">
 								<div class="medium-6 medium-push-4 column">
-									<button type="submit" class="btn btn-secondary btn-secondary-fill">
+									<button type="submit" class="btn btn-secondary btn-fill">
 										<i class="fa fa-btn fa-envelope"></i>Link zum Passwort-Zurücksetzen senden
 									</button>
 								</div>

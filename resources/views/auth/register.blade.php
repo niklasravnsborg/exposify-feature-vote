@@ -75,7 +75,7 @@
 
 						<div class="row">
 							<div class="medium-6 medium-offset-4 column">
-								<button type="submit" class="btn btn-secondary btn-secondary-fill">
+								<button type="submit" class="btn btn-secondary btn-fill">
 									<i class="fa fa-btn fa-user"></i>Registrieren
 								</button>
 							</div>

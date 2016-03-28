@@ -18,6 +18,14 @@ input[type="checkbox"] {
 	margin-bottom: 10px;
 }
 
+.vote-btn {
+	width: 100%;
+}
+
+.list-group-item .small-10.column {
+	margin-top: 3px;
+}
+
 .fa-btn {
 	margin-right: 6px;
 }

@@ -53,11 +53,11 @@
 
 						<div class="row">
 							<div class="medium-10 medium-offset-4 column">
-								<button type="submit" class="btn btn-secondary btn-secondary-fill">
+								<button type="submit" class="btn btn-secondary btn-fill">
 									<i class="fa fa-btn fa-sign-in"></i>Anmelden
 								</button>
 
-								<a class="btn btn-secondary" href="{{ url('/password/reset') }}">Passwort vergessen?</a>
+								<a class="btn" href="{{ url('/password/reset') }}">Passwort vergessen?</a>
 							</div>
 						</div>
 					</form>
