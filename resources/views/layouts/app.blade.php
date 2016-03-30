@@ -14,7 +14,7 @@
 	<body id="app-layout">
 		<header class="navigation">
 			<div class="logo-section">
-				<div class="logo"><a href="/"><img src="http://exposify.dev/assets/img/exposify-logo-single-white.svg" alt="Exposify logo"></a></div>
+				<div class="logo"><a href="/"><img src="https://www.exposify.de/assets/img/exposify-logo-single-white.svg" alt="Exposify logo"></a></div>
 			</div>
 			<nav class="header-nav">
 				<a href="https://www.exposify.de">Startseite</a>
