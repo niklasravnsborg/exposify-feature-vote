@@ -28,7 +28,7 @@
 				<div class="medium-12 column">
 					<div class="hero-content text-center">
 						<h1 class="section-title">Exposify Funktionen</h1>
-						<p class="intro">Melde Dich an um mitzubestimmen welche Funktionen Du in Exposify sehen möchtest.</p>
+						<p class="intro">Melde Dich an, um mitzubestimmen welche Funktionen Du in Exposify sehen möchtest.</p>
 					</div>
 				</div>
 			</div>
