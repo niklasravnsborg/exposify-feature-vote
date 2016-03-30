@@ -1,0 +1,8 @@
+{
+  "name": "expsosify-feature-vote",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-sync-deploy": "^0.4.0"
+  }
+}
