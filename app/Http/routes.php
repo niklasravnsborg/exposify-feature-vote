@@ -25,8 +25,8 @@
 Route::get('/', 'VoteController@index');
 
 Route::group(['middleware' => 'web'], function () {
-    Route::auth();
-    Route::get('/', 'VoteController@index');
-    Route::post('/vote', 'VoteController@vote');
-    Route::post('/unvote', 'VoteController@unvote');
+	Route::auth();
+	Route::get('/', 'VoteController@index');
+	Route::post('/vote', 'VoteController@vote');
+	Route::post('/unvote', 'VoteController@unvote');
 });

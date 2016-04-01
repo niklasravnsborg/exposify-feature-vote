@@ -53,6 +53,14 @@
 
 		@yield('content')
 
+		<footer class="main-footer text-center">
+			Mit <i class="fa fa-heart"></i> aus Deutschland • <a href="mailto:info@exposify.de">info@exposify.de</a> • <a href="/impressum/" target="_blank">Impressum</a>
+			<div class="main-footer-socials">
+				<a class="social-circle" href="https://twitter.com/exposifyapp" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a class="social-circle" href="https://facebook.com/exposifyapp" target="_blank"><i class="fa fa-facebook"></i></a>
+			</div>
+		</footer>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</body>

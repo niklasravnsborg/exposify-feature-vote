@@ -6,6 +6,13 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Registrieren</div>
 				<div class="panel-body">
+					<p>
+						@if(isset($_GET['note']))
+							Danke, dass Du für diese Funktion voten möchtest. Das ist super!<br>
+						@endif
+						Registriere Dich hier oder <a href="/login">melde Dich an</a>, falls Du schon einen Account besitzt.
+					</p>
+
 					<form class="form" role="form" method="POST" action="{{ url('/register') }}">
 						{!! csrf_field() !!}
 

@@ -14,6 +14,21 @@ input[type="checkbox"] {
 	margin-right: 5px;
 }
 
+.main-footer {
+	margin-top: 40px;
+	border-top: 1px solid #eee;
+}
+
+@media (min-width: 800px) {
+	.hero .hero-content {
+		padding-top: 160px;
+	}
+}
+
+.main-content p:first-child {
+	margin-top: 0;
+}
+
 .form .row {
 	margin-bottom: 10px;
 }
@@ -271,7 +286,7 @@ button.list-group-item-danger.active:focus {
 }
 
 .panel {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	background-color: #fff;
 	border: 1px solid transparent;
 	border-radius: 4px;
