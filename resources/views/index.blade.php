@@ -16,7 +16,7 @@
 					@foreach($features as $feature)
 						<li class="list-group-item">
 							<div class="row">
-								<div class="small-2 end column">
+								<div class="small-5 medium-3 large-2 end column">
 									@if (!$feature->is_voted())
 										<form action="/vote" method="POST">
 											<input name="_token" type="hidden" value="{{ csrf_token() }}">
@@ -31,7 +31,7 @@
 										</form>
 									@endif
 								</div>
-								<div class="small-10 column">
+								<div class="small-7 medium-9 large-10 column feature-text">
 									<strong>{{ $feature['title'] }}</strong>
 									{{ $feature['description'] }}
 								</div>
